@@ -1,3 +1,7 @@
 // Deploy Backend Project on "Cyclic"
 visit https://www.cyclic.sh/
 signUp there with github 
+create a repository on github that should have the index.js at home directory
+in cyclic choose the same repository and enter port number and mongo_url and key(if needed)
+click save.
+deployed link is visible at the top of the page. 
