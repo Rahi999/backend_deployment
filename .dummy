@@ -1,0 +1,45 @@
+// use jsonwebtoken for creating random token everytime user login
+//1. npm i jsonwebtoken
+// 2. const jwt = require("jsonwebtoken")
+// Encrypting(creating) Token while login
+//3. create token via-> const token = jwt.sign(payload, 'secret_Key) like-> const token = jwt.sign({course : 'backend'}, 'masai')
+// Decrypting(readong) token while visiting private routes
+//4. jwt.verify(token, 'masai', (err,decoded) => {
+      // if(err){
+      //  res.send("Invalid token");
+       // console.log(err);
+      // }else{
+      //  res.send("Data...")
+      // }
+   // }) 
+
+
+   // ---->>>>>>>>>>>> Hashing Password
+   // npm i bcrypt
+   // during registeration will need to hash the password
+   //   bcrypt.hash(myPlaintextPassword, saltRounds, (err, hash) => {
+            // store hash password in your DB.
+             
+        //})
+        //  bcrypt.hash(myPlaintextPassword, 5, (err, hash) => {
+            // store hash password in your DB.
+             
+       // })
+
+       // decrypt hashed password while login
+    //   try{
+    //     const user = await UserModel.find({email:email});
+    //     if(user.length > 0){
+    //         bcrypt.compare(pass, user[0].pass,  (err, result) => {
+    //             if(result) {
+    //                 const token = jwt.sign({course : 'backend'}, 'masai')
+    //                 res.send({"msg":"Loggin Successfull", "token":token})
+
+    //             }else{
+    //                 res.send("Wrong Credentials")
+    //             }
+    //         })
+    //     }else{
+    //         res.send("Wrong Credential")
+    //     }
+    // }
